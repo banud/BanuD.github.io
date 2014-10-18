@@ -6,12 +6,12 @@
   </head>
 
   <body>
-    <div>***TOP PART***
-      <img>---IMAGE---</img>
+    <div id="top">***TOP PART***
+      <img id="top_img">---IMAGE---</img>
 
       <p>---TEXT BOX---</p>
 
-      <div>---LINK ICONS---
+      <div id="icons">---LINK ICONS---
         <button>++ Button LinkedIn ++</button>
         <button>++ Button GitHub++</button>
         <button>++ Button Twitter++</button>
@@ -21,39 +21,49 @@
 
 
 
-    <div>***MIDDLE PART***
-      <div>---BOX 1---
-        <p>++ About ++</p>
+    <div id="mid">***MIDDLE PART***
+      <div class="boxes">---BOX 1---
+        <p class="title">++ About ++</p>
 
         <img>++ Image ++</img>
           with link to relevant page
 
-        <p>++ Text ++</p>
+        <p class="text">++ Text ++</p>
       </div>
 
-      <div>---BOX 2---
-        <p>++ Projects ++</p>
+      <div class="boxes">---BOX 2---
+        <p class="title">++ Projects ++</p>
 
         <img>++ Image ++</img>
         with link to relevant page
 
-        <p>++ Text ++</p>
+        <p class="text">++ Text ++</p>
       </div>
 
-      <div>---BOX 3---
-        <p>++ Blog ++</p>
+      <div class="boxes">---BOX 3---
+        <p class="title">++ Blog ++</p>
 
         <img>++ Image ++</img>
         with link to relevant page
 
-        <p>++ Text ++</p>
+        <p class="text">++ Text ++</p>
       </div>
     </div>
 
 
-    <div>***FOOTER***
-      <p>-- List or Table of links to navigate --</p>
-        - Will be on every page
+    <div id="footer">***FOOTER*** - Will be on every page
+      <table>-- List or Table of links to navigate --
+        <tr>
+          <td> 1st Row, 1st Column - Home</td>
+          <td> 1st Row, 2nd Column - About</td>
+          <td> 1st Row, 3rd Column - Site map</td>
+        </tr>
+        <tr>
+          <td> 2nd Row, 1st Column - Projects</td>
+          <td> 2nd Row, 2nd Column - Blog</td>
+          <td> 2nd Row, 2nd Column - Contact me</td>
+        </tr>
+      </table>
     </div>
 
   </body>
