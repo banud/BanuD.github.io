@@ -1,0 +1,17 @@
+/* HTML selector/tag HIERARCHY
+
+#top
+  #top_image
+  p
+  #icons
+
+#mid
+  .boxes (div class for all 3 boxes)
+    .title
+    img
+    .text
+
+#footer
+  table
+
+  */
