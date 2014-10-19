@@ -13,7 +13,7 @@
             ul
                 li
         #content
-            #blog_title (h2)
+            #blog_title (h2 & h3)
             p
     #footer
         table
