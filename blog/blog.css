@@ -2,59 +2,121 @@
 #container
     #header
         img
+        div
+            p
+            #logo
+                p
     #mid
-        #nav_bar
+        #blog_menu
+            h3
+            h4
             ul
-                ul
+                li
         #content
-            h2
+            #blog_title (h2)
             p
     #footer
-        p
+        table
+            tr
+                td
+                a
+            tr
+                td
+                a
+
+
+FONT FAMILIES:
+font-family: 'Dosis', sans-serif;
+font-family: 'Monoton', cursive;
 */
 
-#container{
-    width: 100%;
+
+/*PAGE CONTAINER and LINK PROPERTIES*/
+#container {
+    width: 1200px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #C7CCCC;
+    font-family: 'Dosis', sans-serif;
+}
+a {
+    font-color: #000000;
 }
 
-#header{
+/*HEADER => Includes image and letter B, maybe some text with it later*/
+#header {
     width: 100%;
-    height: 200px;
+    height: 400px;
     position: static;
     background-color: gray;
     border-radius: 5px;
+    display: inline-block;
 }
 
-#mid{
-   width:100%;
-   height: 60%;
-   padding: 10px 0 10px 0;
+#header div {
+    float: right;
+    font-family: 'Monoton', cursive;
+    font-size: 1em;
 }
 
-#nav_bar{
+#header_text {
+    text-align: center;
+    margin: 60px 0px 60px 80px;
+}
+#header_name {
+    margin-right: 160px;
+}
+#logo {
+    margin: 60px 0px 60px 80px;
+    font-size: 10em;
+}
+
+
+/*MID => Includes 2 divs: Blog Menu for previous blogs and Content Block*/
+#mid {
+    width:100%;
+    height: 60%;
+    padding: 10px 0 10px 0;
+}
+
+#blog_menu {
     float: left;
-    width: 20%;
-    height: 630px;
-    padding: 5px 20px 5px 20px;
-    background-color: blue;
+    width: 210px;
+    height: 400px;
+    margin: 10px 10px 10px 0px;
+    background-color: #83C2C0;
     border-radius: 5px;
+    padding: 0 10px 0 10px;
 }
 
-#content{
+#blog_menu h3 {font-weight: extra-bold;}
+#blog_menu h4 {font-weight: bold;}
+
+#content {
     float:left;
-    width: 70%;
-    height: 630px;
-    padding: 5px 20px 5px 20px;
+    width: 930px;
+    height: 400px;
+    margin: 10px 0px 10px 10px;
     background-color: yellow;
     border-radius: 5px;
+    background-color: #F8FFFF;
+    padding: 0 10px 0 10px;
+    overflow: scroll;
 }
 
-#footer{
-    position: fixed;
+
+
+/*FOOTER => Will have navigation table*/
+#footer {
+    position: static;
     bottom: 0;
     clear: both;
     width:100%;
-    height: 10%;
-    background-color: red;
-    border-radius: 5px;
+    height: 80px;
+    background-color: #1E7F7D;
+    border-radius: 10px;
+    font-weight: bold;
 }
+
+table {width: 100%;}
+td {padding: 15px 5px 5px 5px;}
