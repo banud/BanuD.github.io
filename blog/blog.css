@@ -3,9 +3,9 @@
     #header
         img
         div
-            p
+            #header_text
             #logo
-                p
+            #button
     #mid
         #blog_menu
             h3
@@ -39,9 +39,17 @@ font-family: 'Monoton', cursive;
     background-color: #C7CCCC;
     font-family: 'Dosis', sans-serif;
 }
-a {
-    font-color: #000000;
-}
+
+a {font-weight: extra-bold;}
+
+/* unvisited link */
+a:link {color: #414242;}
+
+/* visited link */
+a:visited {color: #F8FFFF;}
+
+/* mouse over link */
+a:hover {color: #000000;}
 
 /*HEADER => Includes image, logo and text*/
 #header {
@@ -109,7 +117,7 @@ button {
 
 
 
-/*FOOTER => Will have navigation table*/
+/*FOOTER => Navigation table*/
 #footer {
     position: static;
     bottom: 0;

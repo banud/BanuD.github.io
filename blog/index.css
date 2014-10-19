@@ -3,18 +3,13 @@
     #header
         img
         div
-            p
+            #header_text
             #logo
-                p
+            #button
     #mid
-        #blog_menu
-            h3
-            h4
-            ul
-                li
-        #content
-            #blog_title (h2 & h3)
-            p
+      .boxes
+      .title
+      .test
     #footer
         table
             tr
@@ -39,9 +34,17 @@ font-family: 'Monoton', cursive;
     background-color: #C7CCCC;
     font-family: 'Dosis', sans-serif;
 }
-a {
-    font-color: #000000;
-}
+
+a {font-weight: extra-bold;}
+
+/* unvisited link */
+a:link {color: #414242;}
+
+/* visited link */
+a:visited {color: #F8FFFF;}
+
+/* mouse over link */
+a:hover {color: #000000;}
 
 /*HEADER => Includes image, logo and name*/
 #header {
@@ -76,39 +79,39 @@ button {
 }
 
 
-/*MID => Includes 2 divs: Blog Menu for previous blogs and Content Block*/
+/*MID => Includes About, Projects and Blog Boxes with images, links and texts*/
 #mid {
     width:100%;
-    height: 60%;
+    height: 300px;
     padding: 10px 0 10px 0;
     display: inline-block;
+    color: #F8FFFF;
 }
 
-#blog_menu {
+.boxes {
     float: left;
-    width: 210px;
-    height: 400px;
-    margin: 10px 10px 10px 0px;
-    background-color: #83C2C0;
-    border-radius: 5px;
+    width: 300px;
+    height: 200px;
+    margin: 50px 40px 10px 40px;
+    background-color: #414242;
+    border-radius: 20px;
     padding: 0 10px 0 10px;
 }
 
-#blog_menu h3 {font-weight: extra-bold;}
-#blog_menu h4 {font-weight: bold;}
-
-#content {
-    float:left;
-    width: 930px;
-    height: 400px;
-    margin: 10px 0px 10px 10px;
-    background-color: yellow;
-    border-radius: 5px;
-    background-color: #F8FFFF;
-    padding: 0 10px 0 10px;
-    overflow: scroll;
+.title {
+  text-align:center;
+  font-weight: light;
+  font-size: 1.3em;
 }
 
+.boxes img {
+  margin-left: 80px;
+}
+
+.text {
+  text-align:center;
+  font-weight: extra-light;
+}
 
 
 /*FOOTER => Will have navigation table*/
