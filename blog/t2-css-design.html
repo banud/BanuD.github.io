@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800|Monoton' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../blog/blog.css">
+    <title>Banu's Blog</title>
+  </head>
+
+  <body>
+    <div id="container">
+        <div id="header">
+          <img src="../blog/img/snowflake-400.jpg"/>
+          <div>
+            <p class="header_text">THE DEV BOOTCAMP EXPERIENCE</p>
+            <p class="header_text">BY</p>
+            <p id="logo">BD</p>
+            <button><a href="http://www.linkedin.com/in/banudalamanli/">LinkedIn</a></button>
+            <button><a href="http://github.com/BanuD">GitHub</a></button>
+            <button><a href="https://twitter.com/BanuDalamanli">Twitter</a></button>
+            <button><a href="mailto:banudalamanli@gmail.com?Subject=Hello!" target="_top">E-mail</a></button>
+          </div>
+        </div>
+
+        <div id="mid">
+          <div id="blog_menu">
+            <h3>PREVIOUS BLOGS</h3>
+            <h4>October '14</h4>
+            <ul>
+              <li><a href="../blog/t1-git-blog.html">Week 1: Technical Blog</a></li>
+              <li><a href="../blog/c1-chefs-kitchen.html">Week 1: Personal Blog</a></li>
+              <li><a href="../blog/t2-css-design.html">Week 2: Technical Blog</a></li>
+            </ul>
+            </div>
+
+            <div id="content">
+                <h2 id="blog_title">CSS - Margin, Padding, and Border</h2>
+                <h3 id="blog_title">Sun Oct 19</h3>
+                <p>It’s important to understand the difference between margin, border and padding when building a website to make sure it looks exactly the way you intend it to be.</p>
+
+                <p>Let’s look at this diagram:</p>
+
+                <img src="https://github.com/BanuD/BanuD.github.io/blob/master/blog/img/margin.png"/>
+
+                <p>Think of the “content” here as a box. It lives in a website with other boxes. And you like this box and decide to add a margin, some padding and border to it. Here’s what happens:</p>
+
+                <p><span style="font-weight: bold">Margin:</span> If you set the box’s margin to 10 pxs all around, it will create a space of 10px in each direction. This space refers to the exact “distance” between your content box and the other boxes around it. What’s important to remember that this space does not belong to your content box. If it is next to another box which also has a margin of 10 px, they would still be 10 px away from each other - not 20 px. They can both use that space for “distance”.</p>
+
+                <p><span style="font-weight: bold">Padding:</span> Now that you’ve put some distance between your box and the others, you also decide you want some padding as well. And you set a padding of 10 px all around. What happens is that you add 10 px of space to each side of your content. The difference between padding and margin is this padding area belongs to your special content box that you like so much.</p>
+
+                <p>For example, let’s say you gave your box a 10 px padding all around, but didn’t set a margin this time. Right next to it is a box that has a margin set to 10 px. What do you think the distance will be between your content and that box? That’s right, 20 px. Because the padding area belongs to your content and can’t be used as a margin by that other box.</p>
+
+                <p><span style="font-weight: bold">Border:</span> This is an easy one. Where do we set borders in real life, whether it be physical or emotional or mental? Around an area that belongs to us. That applies here as well. The border goes around the padding, if there is one. And if not, than it surrounds the content.</p>
+
+                <p>I hope this helped!</p>
+            </div>
+        </div>
+
+        <div id="footer">
+      <table>
+        <tr>
+          <td><a href="../blog/index.html">Home</a></td>
+          <td><a href="../blog/coming_soon.html">Projects</a></td>
+          <td><a href="../blog/coming_soon.html">Blog</a></td>
+          <td><a href="../blog/coming_soon.html">About</a></td>
+          <td><a href="../blog/coming_soon.html">Contact</a></td>
+          <td><a href="../blog/coming_soon.html">Site map</a></td>
+        </tr>
+      </table>
+        </div>
+    </div>
+  </body>
+
+</html>
