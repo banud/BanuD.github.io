@@ -57,6 +57,8 @@ a:hover {color: #000000;}
     color: #C2431E;
 }
 
+.bold {font-weight: bold;}
+
 /*HEADER => Includes image, logo and text*/
 #header {
     width: 100%;
