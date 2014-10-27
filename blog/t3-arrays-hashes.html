@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800|Monoton' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="blog.css">
+    <title>Banu's Blog</title>
+  </head>
+
+  <body>
+    <div id="container">
+        <div id="header">
+          <img src="img/snowflake-400.jpg"/>
+          <div>
+            <p class="header_text">THE DEV BOOTCAMP EXPERIENCE</p>
+            <p class="header_text">BY</p>
+            <p id="logo">BD</p>
+            <button><a href="http://www.linkedin.com/in/banudalamanli/">LinkedIn</a></button>
+            <button><a href="http://github.com/BanuD">GitHub</a></button>
+            <button><a href="https://twitter.com/BanuDalamanli">Twitter</a></button>
+            <button><a href="mailto:banudalamanli@gmail.com?Subject=Hello!" target="_top">E-mail</a></button>
+          </div>
+        </div>
+
+        <div id="mid">
+          <div id="blog_menu">
+            <h3>PREVIOUS BLOGS</h3>
+            <h4>October '14</h4>
+            <ul>
+              <li><a href="t1-git-blog.html">Week 1: Technical Blog</a></li>
+              <li><a href="c1-chefs-kitchen.html">Week 1: Cultural Blog</a></li>
+              <li><a href="t2-css-design.html">Week 2: Technical Blog</a></li>
+              <li><a href="t3-arrays-hashes.html">Week 3: Technical Blog</a></li>
+              <li><a href="c3-thinking-style.html">Week 3: Cultural Blog</a></li>
+            </ul>
+            </div>
+
+            <div id="content">
+                <h2 id="blog_title">Arrays and Hashes</h2>
+                <h3 id="blog_title">Sun Oct 26th, 2014</h3>
+
+                <p>Arrays and hashes are data structures, which are organized means of storage. We can think of them as “expanded variables” - a variable holds one value whereas arrays and hashes hold many.</p>
+
+                <h4>ARRAYS</h4>
+                <p>We can think of an arrays as a row of multiple container. Each of these containers can hold an element or be empty, and they are numbered (indexed) sequentially starting at 0. It might seem confusing at first - why do arrays start counting their elements at index 0? Well, index 0 is the offset from the beginning of the array. It marks the position of the container that holds the first element.</p>
+                <p>Like this:</p>
+                <img src="img/array.jpg"/>
+                <p>So why is this indexing good for?</p>
+                <p>Arrays give us a way of storing data in order. We can select/access these objects (because everything in ruby is an object) based on this consecutive index. The advantage of this structure gets especially highlighted when we need to loop through our array. All we need to do is to initialize the index to 0 and increment it by 1 for every iteration.</p>
+
+                <h4>HASHES</h4>
+                <p>Hashes are also ordered data structures where objects are stored in pairs, consisting of a key and a value.</p>
+                <p>Like this:</p>
+                <img src="img/hash.jpeg"/>
+                <p>The value is retrieved by means of the key. This structure enables us to perform more complex filtering of our data in addition to basic key-value retrieval.</p>
+
+                <h4>ARRAYS VS. HASHES</h4>
+                <p>Arrays and hashes are very closely connected. In a way, arrays are hashes but they key values are consecutive integers, and hashes are arrays but their indices can be anything, not just numbers. Their difference come in handy depending on what we want to store.</p>
+                <p>For example:</p>
+                <p>It would make sense to store all of my English class exam grades in an array, like this:</p>
+                <img src="img/array_ex.png"/>
+                <p>If I want to access my 3rd grade, all I have to do is to type <span class="code"> puts my_english_grades[2].</span></p>
+                <p>However, if I suddenly decide to store all my grades for all my classes, it would make sense to store them in as a hash:</p>
+                <img src="img/hash_ex.png"/>
+                <p>Here if I want to access the same 3rd english grade all I need to type is <span class="code"> puts all_my_grades[“english_3”]</span></p>
+
+              <p>Hope this helps!</p>
+            </div>
+        </div>
+
+        <div id="footer">
+      <table>
+        <tr>
+          <td><a href="index.html">Home</a></td>
+          <td><a href="coming_soon.html">Projects</a></td>
+          <td><a href="t2-css-design.html">Blog</a></td>
+          <td><a href="coming_soon.html">About</a></td>
+          <td><a href="coming_soon.html">Contact</a></td>
+          <td><a href="coming_soon.html">Site map</a></td>
+        </tr>
+      </table>
+        </div>
+    </div>
+  </body>
+
+</html>
