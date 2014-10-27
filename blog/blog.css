@@ -51,6 +51,12 @@ a:visited {color: #F8FFFF;}
 /* mouse over link */
 a:hover {color: #000000;}
 
+.code {
+    font-family: 'Source Code Pro';
+    font-size: 0.8em;
+    color: #C2431E;
+}
+
 /*HEADER => Includes image, logo and text*/
 #header {
     width: 100%;
