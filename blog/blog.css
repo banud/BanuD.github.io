@@ -93,7 +93,7 @@ button {
 #blog_menu {
     float: left;
     width: 210px;
-    height: 400px;
+    height: 800px;
     margin: 10px 10px 10px 0px;
     background-color: #83C2C0;
     border-radius: 5px;
@@ -106,7 +106,7 @@ button {
 #content {
     float:left;
     width: 930px;
-    height: 400px;
+    height: 800px;
     margin: 10px 0px 10px 10px;
     background-color: yellow;
     border-radius: 5px;
