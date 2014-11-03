@@ -39,9 +39,28 @@
             </div>
 
             <div id="content">
-                <h2 id="blog_title">BLOG TITLE</h2>
-                <h3 id="blog_title">Date</h3>
-                <p>BLOG CONTENT HERE</p>
+                <h2 id="blog_title">Enumerable::map</h2>
+                <h3 id="blog_title">Sun Nov 2nd, 2014</h3>
+
+                <p>Collections objects like arrays, hashes, sets, and ranges typically include the <em>Enumerable</em> module. The <em>Enumerable</em> module provides these objects with all kinds of collection related-methods, which are defined by the <em>each</em> method of their relevant class. In other words, classes that want to use the <em>Enumerable</em> have to define an instance method called <em>each</em>. Like this:</p>
+
+                <img src="img/enumerable_syntax1.png"/>
+
+                <h4>The <em>map</em> Method</h4>
+                <p>There are a few important aspects of the <em>map</em> method:</p>
+                <ol>
+                  <li>It always returns a new array.</li>
+                <li>The returned array is always the same size as the original array.</li>
+                <li>Each of the elements of the returned array corresponds to the element in the same position in the original array.</li>
+                </ol>
+                <p>For example:</p>
+                <img src="img/enumerable_ex1.png"/>
+
+                <p>Output:</p>
+                <img src="img/enumerable_ex1_output.png"/>
+
+                <h4><em>map</em> Vs. <em>map!</em></h4>
+                <p>The <em>map!</em> method is the destructive version of <em>map</em>. It does the “mapping” in-place. An important point to realize here is that the <em>map!</em> therefore has to be defined in the <em>Array</em> class and not in the <em>Enumerable</em> module. The reason for that is, doing an in-place mapping only makes sense if the original collection object is already an array.</p>
             </div>
         </div>
 
