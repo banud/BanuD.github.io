@@ -37,15 +37,35 @@
               <li><a href="c4-tech-issues.html">Week 4: Getting into the tech world</a></li>
               <li><a href="t5-ruby-classes.html">Week 5: Week 5: Let's create a Pegasus!</a></li>
               <li><a href="c5-feedback.html">Week 5: Pairing and Feedback</a></li>
-              <li><a href="t6-oop-concepts.html">Week 6: </a></li>
+              <li><a href="t6-oop-concepts.html">Week 6: Classes vs. Modules</a></li>
               <li><a href="c6-stereotype-threat.html">Week 6: </a></li>
             </ul>
             </div>
 
             <div id="content">
-                <h2 id="blog_title">BLOG TITLE</h2>
+                <h2 id="blog_title">Classes vs. Modules</h2>
                 <h3 id="blog_title">Wed Nov 19, 2014</h3>
-                <p>BLOG CONTENT HERE</p>
+                <p>Classes and modules are very similar. In fact, the class Class is a subclass of the class Module, therefore classes are also module objects. We can think of this as Modules being a more basic structure and classes being a specialization of the this structure.</p>
+
+                <p>Both modules and classes are used to encapsulate behaviors and constants. Classes are however are more specialized by also bundling certain behaviour, attributes, and class specific behaviours that will be available only to the class's instances. Modules on the other hand, are bundles of methods that can be accessible accross different classes. Also unlike classes, modules do not have instances.</p>
+
+                <p><h4>How do we make methods in classes and modules accessible to objects?</h4></p>
+
+                <p>Classes can inherit methods from other classes if that class is it's superclass, or one of their ancestor class(es). Modules on the other hand, get mixed into classes using either the "include" or "prepend" method*. A module mixed into a class this way is often called a "mixin".</p>
+
+                <p><em>*The prepend method is new in Ruby 2.0 and the difference between include and prepend is that when prepend is used the object looks into that module before it does in the class.</em></p>
+
+                <p><h4>So if they are so similar, why bother with whether to decide where to put methods? Why not put them all in modules, or all in classes?</h4></p>
+
+                <p>The answer to this question depends on your design. One important point to keep in mind is that classes can only inherit from one superclass. </p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
+
+                <p></p>
             </div>
         </div>
 
