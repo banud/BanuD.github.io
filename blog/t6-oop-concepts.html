@@ -57,15 +57,9 @@
 
                 <p><h4>So if they are so similar, why bother with whether to decide where to put methods? Why not put them all in modules, or all in classes?</h4></p>
 
-                <p>The answer to this question depends on your design. One important point to keep in mind is that classes can only inherit from one superclass. </p>
+                <p>The answer to this question depends on your design. One important point to keep in mind is that classes can only inherit from one superclass. Mixing has a very strong resemblance to inheritance but the main difference is that you can mixin more than one module to a class, as well as mixin the same module to multiple classes.</p>
 
-                <p></p>
-
-                <p></p>
-
-                <p></p>
-
-                <p></p>
+                <p>Therefore, if your design requires numerous behaviours for your class's instances, but you don't want to stash them all in the class, or in the class's superclass and/or ancestor classes, using modules will be a good way to organize your code. Also behaviours that you identify as possible to be exhibited by more than one class or object would be an appropriate candidate for a module.</p>
             </div>
         </div>
 
