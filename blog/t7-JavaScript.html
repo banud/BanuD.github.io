@@ -55,10 +55,12 @@
                 <img src="img/ruby-hash.png"/>
                 <p>Second, a JS Object Literal:</p>
                 <img src="img/js-obj-literal.png"/>
-                <p>Hash tables in Ruby (like everything else!) are objects. They store key-value pairs and are used to store data. In JS they are called Object Literals. Objects in JS have properties (not keys) associated with them and these properties have values attached to them. Object literal property values can be of any data type, including array literals, functions, and nested object literals.</p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>Hash tables in Ruby (like everything else!) are objects. They contain key-value pairs and are used to store data about what ever it is you'd like to store information on. In JS they are called Object Literals. Objects in JS have properties (not keys) associated with them and these properties have values attached to them. Object literal property values can be of any data type, including array literals, functions, and nested object literals. Both ruby hashes and JS object literals seem appropriate to use when we need to store related data under one name(variable) AND we only need one copy of an object. What happens when we make another copy of the same object by assigning it to a new variable? It can be done, but it is important to notice that when a property/key value changes in the original object, it will change in every copy of the object. That's great if that is what we want, but if not it is an invitation for a massive pain in the neck.</p>
+                <p>What if we need more copies of the same object? Well, ruby very conveniently has classes for that, where you can have both set values and values that are assigned at initialization for every instance(object) of that class. JavaScript accomplishes the same with Object Constructor Functions. Here's what they look like:</p>
+                <p>First, a Ruby Class:</p>
+                <img src="img/ruby-hash.png"/>
+                <p>Second, JS Constructor Function:</p>
+                <img src="img/js-obj-literal.png"/>
                 <p></p>
                 <p></p>
             </div>
