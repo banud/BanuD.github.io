@@ -1,0 +1,50 @@
+body {
+  background-color: #C7CCCC;
+}
+
+#container{
+  font-family: arial;
+}
+
+h1 {
+  text-align: center;
+}
+
+#table_title {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+table {
+  border: 2px solid black;
+  margin: auto;
+  background-color: white;
+}
+
+td, th {
+  border: 1px solid black;
+  width: 400px;
+  padding: 0px 10px;
+}
+
+.subject {
+  font-weight: bold;
+}
+
+.code {
+  font-family: monospace;
+}
+.red {
+  color: #980000;
+  font-weight: bold;
+}
+
+.blue {
+  color:blue;
+}
+
+.green {
+  color: #66CC33;
+}
