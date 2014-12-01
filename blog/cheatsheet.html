@@ -2,374 +2,432 @@
 <html>
 
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800|Monoton' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="blog.css">
     <link rel="stylesheet" type="text/css" href="cheatsheet.css">
     <title>HTML BASICS Cheatsheet</title>
   </head>
 
   <body>
     <div id="container">
-      <h1>HTML BASICS Cheatsheet</h1>
-      <table><pre>
-          <thead id="table_title">
-             <tr>
-               <th>
-                  CONCEPTS
-                </th>
-                <th>
-                   SYNTAX
-                </th>
-             </tr>
-           </thead>
-        <tr>
-          <td><p class="subject">HEAD</p>
-              <p>* contains information about your HTML file, like its title. The title is what we see in the browser's title bar or page tab.</p></td>
-              <td><pre class="code">
-&lt!DOCTYPE html&gt
-&lthtml&gt
-<span class="red">&lthead&gt
-      &lttitle&gt</span>"My Webpage"<span class="red">&lt/title&gt
-    &lt/head&gt
-&lt/html&gt</span>
-              </pre></td>
-        </tr>
-        <tr>
-          <td><p class="subject">BODY</p>
-          <p>* where you put your content, such as text, images, and links. It is what will be visible on the actual page.</p>
-          <p>* paragraphs: <span class="code">&ltp&gt &lt/p&gt</span></p></td>
-          <td><pre class="code">
-&lt!DOCTYPE html&gt
-&lthtml&gt
-    &lthead&gt
-        &lttitle&gt"My Webpage"&lt/title&gt
-    &lt/head&gt
+        <div id="header">
+          <img src="img/snowflake-400.jpg"/>
+          <div>
+            <p class="header_text">THE DEV BOOTCAMP EXPERIENCE</p>
+            <p class="header_text">BY</p>
+            <p id="logo">BD</p>
+            <button><a href="http://www.linkedin.com/in/banudalamanli/">LinkedIn</a></button>
+            <button><a href="http://github.com/BanuD">GitHub</a></button>
+            <button><a href="https://twitter.com/BanuDalamanli">Twitter</a></button>
+            <button><a href="mailto:banudalamanli@gmail.com?Subject=Hello!" target="_top">E-mail</a></button>
+          </div>
+        </div>
 
-    <span class="red">&ltbody&gt
-     &ltp&gt</span>This is my first paragraph<span class="red">&lt/p&gt</span>
-       &ltp&gtAnd this is the second one&lt/p&gt
-    <span class="red">&lt/body&gt</span>
-&lt/html&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">HEADING TAGS</p>
-          <pre class="code">
-&lth1&gt The CEO &lt/h1&gt
-&lth2&gt VP &lt/h2&gt
-&lth3&gt Director &lt/h3&gt
-&lth4&gt Middle management &lt/h4&gt
-&lth5&gt Lowly assistant &lt/h5&gt
-&lth6&gt Gets coffee for everyone &lt/h6&gt
-          </pre>
-          </td>
-          <td><pre class="code">
-&ltbody&gt
-  <span class="red">&lth1&gt</span> Headline <span class="red">&lt/h1&gt</span>
-    <span class="red">&ltp&gt</span>First Paragraph<span class="red">&lt/p&gt</span>
-    &ltp&gtSecond Paragraph&lt/p&gt
- &lt/body&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">HYPERLINKS</p>
-            <ol>
-              <li>First, there's an opening <span class="code">&lta&gt</span> tag and that tag has an attribute called href. The href value tells your link where you want it to go.</li>
-              <li>Then you have a description of your link between your opening <span class="code">&lta&gt</span> and your closing <span class="code">&lt/a&gt</span> tags. This is what you will be able to click on.</li>
-              <li>Finally, you have your closing <span class="code">&lt/a&gt</span> tag.</li>
-            </ol>
-          </td>
-          <td><pre class="code">
-&lt!DOCTYPE html&gt
-&lthtml&gt
-  &lthead&gt
-    &lttitle&gt&lt/title&gt
-  &lt/head&gt
-  &ltbody&gt
-    <span class="red">&lta href=</span>"http://www.codeacademy.com" &gt Click to go to CodeAcademy <span class="red">&lt/a&gt</span>
-  &lt/body&gt
-&lt/html&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">ADDING IMAGES</p>
-          <p>* use an image tag, like so: <span class="code">&ltimg&gt</span>. This tag is a bit different from the others. Instead of putting the content between the tags, you tell the tag where to get the picture using src. It's also different because there is no ending tag. It has / in the tag to close it: <span class="code">&ltimg src="url" /&gt</span>.</p>
-          </td>
-          <td><pre class="code">
-&lt!DOCTYPE html&gt
-&lthtml&gt
-   &lthead&gt
-  &lttitle&gt&lt/title&gt
-   &lt/head&gt
-   &ltbody&gt
-  <span class="red">&ltimg src=</span>"http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg" <span id="code">/&gt</span>
-   &lt/body&gt
-&lt/html&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">ADDING LINKS TO IMAGES</p>
-          <ol>
-            <li>First we open our <span class="code">&lta&gt</span> tag and point the href to URL.</li>
-            <li> But this time, instead of using text inside the <span class="code">&lta&gt</span> tag, we use an <span class="code">&ltimg&gt</span> tag.</li>
-            <li> Finally, we have our closing<span class="code">&lt/a&gt</span> tag.</li>
-          </ol>
+        <div id="mid">
+          <div id="blog_menu">
+            <h3>PREVIOUS BLOGS</h3>
+            <h4>October '14</h4>
+            <ul>
+              <li><a href="t1-git-blog.html">Week 1: Git & GitHub</a></li>
+              <li><a href="c1-chefs-kitchen.html">Week 1: Non-technical, All-personal First Week Blog</a></li>
+              <li><a href="t2-css-design.html">Week 2: CSS - Margin, Padding, and Border</a></li>
+              <li><a href="t3-arrays-hashes.html">Week 3: Arrays and Hashes</a></li>
+              <li><a href="c3-thinking-style.html">Week 3: Thinking in Style</a></li>
+            </ul>
+            <h4>November '14</h4>
+            <ul>
+              <li><a href="t4-enumerable-methods.html">Week 4: Les Enumerables</a></li>
+              <li><a href="c4-tech-issues.html">Week 4: Getting into the tech world</a></li>
+              <li><a href="t5-ruby-classes.html">Week 5: Week 5: Let's create a Pegasus!</a></li>
+              <li><a href="c5-feedback.html">Week 5: Pairing and Feedback</a></li>
+              <li><a href="t6-oop-concepts.html">Week 6: Classes vs. Modules</a></li>
+              <li><a href="c6-stereotype-threat.html">Week 6: I'm a woman, I'm over 30, and I'm not from around here</a></li>
+              <li><a href="t7-JavaScript.html">Week 7: Ruby Hashes and Classes Vs. JavaScript Objects and Object Constructor Functions</a></li>
+              <li><a href="c7-values.html">Week 7: "Cogito ergo sum"</a></li>
+              <li><a href="cheatsheet.html">Week 8: CheatSheet - HTML Basics</a></li>
+            </ul>
+            </div>
 
-          </td>
-          <td><pre class="code">
-<span class="red">&lta href=</span>"http://www.codecademy.com/"<span class="red">&gt</span>
-    <span class="red">&ltimg src=</span>"http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg"/&gt
-<span class="red">&lt/a&gt</span>
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">ORDERED LISTS</p>
-           <ol>
-              <li>Begin the ordered list with the opening tag<span class="code">&ltol&gt</span>.</li>
-              <li>Wrap (i.e.surround) each individual item with <span class="code">&ltli&gt</span> and <span class="code">&lt/li&gt</span> tags.</li>
-              <li>Each listed item is only on one line, so put the entire element on one line.</li>
-              <li>Finish the ordered list with the closing tag<span class="code">&lt/ol&gt</span>.</li>
-            </ol>
-          </td>
-          <td><pre class="code">
-&lt!DOCTYPE html&gt
-&lthtml&gt
-   &lthead&gt
-  &lttitle&gtLists&lt/title&gt
-   &lt/head&gt
-   &ltbody&gt
-  &lth2&gtList of things I find OK&lt/h2&gt
-     <span class="red">&ltol&gt</span>
-        <span class="red">&ltli&gt</span>Chocolate<span class="red">&lt/li&gt</span>
-        <span class="red">&ltli&gt</span>Coffee<span class="red">&lt/li&gt</span>
-        <span class="red">&ltli&gt</span>Snow<span class="red">&lt/li&gt</span>
-     <span class="red">&lt/ol&gt</span>
-   &lt/body&gt
-&lt/html&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">UNORDERED LISTS</p>
-           <p> * for bullets instead of numbers</p>
-          </td>
-          <td><pre class="code">
-     <span class="red">&ltul&gt</span>
-        <span class="red">&ltli&gt</span>Chocolate<span class="red">&lt/li&gt</span>
-     <span class="red">&lt/ul&gt</span>
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">NESTED LISTS</p>
+            <div id="content">
+              <div>
+                    <h1>HTML BASICS Cheatsheet</h1>
+                    <table id="cheat_sheet"><pre>
+                        <thead id="table_title">
+                           <tr>
+                             <th>
+                                CONCEPTS
+                              </th>
+                              <th>
+                                 SYNTAX
+                              </th>
+                           </tr>
+                         </thead>
+                      <tr>
+                        <td><p class="subject">HEAD</p>
+                            <p>* contains information about your HTML file, like its title. The title is what we see in the browser's title bar or page tab.</p></td>
+                            <td><pre class="code">
+              &lt!DOCTYPE html&gt
+              &lthtml&gt
+              <span class="red">&lthead&gt
+                    &lttitle&gt</span>"My Webpage"<span class="red">&lt/title&gt
+                  &lt/head&gt
+              &lt/html&gt</span>
+                            </pre></td>
+                      </tr>
+                      <tr>
+                        <td><p class="subject">BODY</p>
+                        <p>* where you put your content, such as text, images, and links. It is what will be visible on the actual page.</p>
+                        <p>* paragraphs: <span class="code">&ltp&gt &lt/p&gt</span></p></td>
+                        <td><pre class="code">
+              &lt!DOCTYPE html&gt
+              &lthtml&gt
+                  &lthead&gt
+                      &lttitle&gt"My Webpage"&lt/title&gt
+                  &lt/head&gt
 
-           </td>
-          <td><pre class="code">
-&lt!DOCTYPE html&gt
-&lthtml&gt
-  &lthead&gt
-    &lttitle&gtNested lists&lt/title&gt
-  &lt/head&gt
+                  <span class="red">&ltbody&gt
+                   &ltp&gt</span>This is my first paragraph<span class="red">&lt/p&gt</span>
+                     &ltp&gtAnd this is the second one&lt/p&gt
+                  <span class="red">&lt/body&gt</span>
+              &lt/html&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">HEADING TAGS</p>
+                        <pre>
+    &lth1&gt The CEO &lt/h1&gt
+    &lth2&gt VP &lt/h2&gt
+    &lth3&gt Director &lt/h3&gt
+    &lth4&gt Middle management &lt/h4&gt
+    &lth5&gt Lowly assistant &lt/h5&gt
+    &lth6&gt Gets coffee for everyone &lt/h6&gt
+                        </pre>
+                        </td>
+                        <td><pre class="code">
+              &ltbody&gt
+                <span class="red">&lth1&gt</span> Headline <span class="red">&lt/h1&gt</span>
+                  <span class="red">&ltp&gt</span>First Paragraph<span class="red">&lt/p&gt</span>
+                  &ltp&gtSecond Paragraph&lt/p&gt
+               &lt/body&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">HYPERLINKS</p>
+                          <ol>
+                            <li>First, there's an opening <span class="code">&lta&gt</span> tag and that tag has an attribute called href. The href value tells your link where you want it to go.</li>
+                            <li>Then you have a description of your link between your opening <span class="code">&lta&gt</span> and your closing <span class="code">&lt/a&gt</span> tags. This is what you will be able to click on.</li>
+                            <li>Finally, you have your closing <span class="code">&lt/a&gt</span> tag.</li>
+                          </ol>
+                        </td>
+                        <td><pre class="code">
+              &lt!DOCTYPE html&gt
+              &lthtml&gt
+                &lthead&gt
+                  &lttitle&gt&lt/title&gt
+                &lt/head&gt
+                &ltbody&gt
+                  <span class="red">&lta href=</span>"http://www.codeacademy.com" &gt Click to go to CodeAcademy <span class="red">&lt/a&gt</span>
+                &lt/body&gt
+              &lt/html&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">ADDING IMAGES</p>
+                        <p>* use an image tag, like so: <span class="code">&ltimg&gt</span>. This tag is a bit different from the others. Instead of putting the content between the tags, you tell the tag where to get the picture using src. It's also different because there is no ending tag. It has / in the tag to close it: <span class="code">&ltimg src="url" /&gt</span>.</p>
+                        </td>
+                        <td><pre class="code">
+              &lt!DOCTYPE html&gt
+              &lthtml&gt
+                 &lthead&gt
+                &lttitle&gt&lt/title&gt
+                 &lt/head&gt
+                 &ltbody&gt
+                <span class="red">&ltimg src=</span>"http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg" <span id="code">/&gt</span>
+                 &lt/body&gt
+              &lt/html&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">ADDING LINKS TO IMAGES</p>
+                        <ol>
+                          <li>First we open our <span class="code">&lta&gt</span> tag and point the href to URL.</li>
+                          <li> But this time, instead of using text inside the <span class="code">&lta&gt</span> tag, we use an <span class="code">&ltimg&gt</span> tag.</li>
+                          <li> Finally, we have our closing<span class="code">&lt/a&gt</span> tag.</li>
+                        </ol>
 
-  &ltbody&gt
-    <span class="green">&ltol&gt</span>
-     <span class="red">&ltli&gt</span> Dad's interests
-        <span class="blue">&ltul&gt</span>
-          &ltli&gtfootball&lt/li&gt
-          &ltli&gtknitting&lt/li&gt
-        <span class="blue">&lt/ul&gt</span>
-      <span class="red">&lt/li&gt</span>
+                        </td>
+                        <td><pre class="code">
+              <span class="red">&lta href=</span>"http://www.codecademy.com/"<span class="red">&gt</span>
+                  <span class="red">&ltimg src=</span>"http://s3.amazonaws.com/codecademy-blog/assets/f3a16fb6.jpg"/&gt
+              <span class="red">&lt/a&gt</span>
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">ORDERED LISTS</p>
+                         <ol>
+                            <li>Begin the ordered list with the opening tag<span class="code">&ltol&gt</span>.</li>
+                            <li>Wrap (i.e.surround) each individual item with <span class="code">&ltli&gt</span> and <span class="code">&lt/li&gt</span> tags.</li>
+                            <li>Each listed item is only on one line, so put the entire element on one line.</li>
+                            <li>Finish the ordered list with the closing tag<span class="code">&lt/ol&gt</span>.</li>
+                          </ol>
+                        </td>
+                        <td><pre class="code">
+              &lt!DOCTYPE html&gt
+              &lthtml&gt
+                 &lthead&gt
+                &lttitle&gtLists&lt/title&gt
+                 &lt/head&gt
+                 &ltbody&gt
+                &lth2&gtList of things I find OK&lt/h2&gt
+                   <span class="red">&ltol&gt</span>
+                      <span class="red">&ltli&gt</span>Chocolate<span class="red">&lt/li&gt</span>
+                      <span class="red">&ltli&gt</span>Coffee<span class="red">&lt/li&gt</span>
+                      <span class="red">&ltli&gt</span>Snow<span class="red">&lt/li&gt</span>
+                   <span class="red">&lt/ol&gt</span>
+                 &lt/body&gt
+              &lt/html&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">UNORDERED LISTS</p>
+                         <p> * for bullets instead of numbers</p>
+                        </td>
+                        <td><pre class="code">
+                   <span class="red">&ltul&gt</span>
+                      <span class="red">&ltli&gt</span>Chocolate<span class="red">&lt/li&gt</span>
+                   <span class="red">&lt/ul&gt</span>
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">NESTED LISTS</p>
 
-      <span class="red">&ltli&gt</span> Mom's interests
-        <span class="blue">&ltul&gt</span>
-          &ltli&gthating football&lt/li&gt
-          &ltli&gtskydiving&lt/li&gt
-        <span class="blue">&lt/ul&gt</span>
-      <span class="red">&lt/li&gt</span>
-    <span class="green">&lt/ol&gt</span>
-  &lt/body&gt
+                         </td>
+                        <td><pre class="code">
+              &lt!DOCTYPE html&gt
+              &lthtml&gt
+                &lthead&gt
+                  &lttitle&gtNested lists&lt/title&gt
+                &lt/head&gt
 
-&lt/html&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">MAKING COMMENTS</p>
+                &ltbody&gt
+                  <span class="green">&ltol&gt</span>
+                   <span class="red">&ltli&gt</span> Dad's interests
+                      <span class="blue">&ltul&gt</span>
+                        &ltli&gtfootball&lt/li&gt
+                        &ltli&gtknitting&lt/li&gt
+                      <span class="blue">&lt/ul&gt</span>
+                    <span class="red">&lt/li&gt</span>
 
-           </td>
-          <td><pre class="code">
-&lt!-- comment --&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">FONT SIZE</p>
+                    <span class="red">&ltli&gt</span> Mom's interests
+                      <span class="blue">&ltul&gt</span>
+                        &ltli&gthating football&lt/li&gt
+                        &ltli&gtskydiving&lt/li&gt
+                      <span class="blue">&lt/ul&gt</span>
+                    <span class="red">&lt/li&gt</span>
+                  <span class="green">&lt/ol&gt</span>
+                &lt/body&gt
 
-           </td>
-          <td><pre class="code">
-<span class="red">&ltp style=</span>"font-size: 12px"<span class="red">&gt</span>
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">FONT COLOR</p>
-            <p> list of colors: <a href=http://www.w3.org/TR/css3-color/#svg-color>http://www.w3.org/TR/css3-color/#svg-color</a></p>
-           </td>
-          <td><pre class="code">
-<span class="red">&lth2 style=</span>"color:red"<span class="red">&gt</span>
-<span class="red">&lth2 style=</span>"color: green; font-size:12px"<span class="red">&gt</span>
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">FONT FAMILY</p>
-            <p> list of fonts: <a href=http://www.w3.org/TR/CSS21/fonts.html#generic-font-families>http://www.w3.org/TR/CSS21/fonts.html#generic-font-families</a></p>
-          </td>
-          <td><pre class="code">
-<span class="red">&lth1 style=</span>"font-family: Arial"<span class="red">&gt</span>Title<span class="red">"red"&lt/h1&gt</span>
-<span class="red">&ltli style=</span>"font-family: Arial"<span class="red">&gt</span>Hello!<span class="red">&lt/li&gt</span>
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">BACKGROUND COLOR</p>
-            <p>* The bullets or list numbers do not align with them</p>
-          </td>
-          <td><pre class="code">
-<span class="red">&ltp style=</span>"background-color: red;"<span class="red">&gt</span>Hello!<span class="red">&lt/p&gt</span>
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">ALIGNING THE TEXT</p>
+              &lt/html&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">MAKING COMMENTS</p>
 
-           </td>
-          <td><pre class="code">
-<span class="red">&lth1 style=</span>"text-align:center"<span class="red">&gt</span>
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">BOLD WORDS</p>
+                         </td>
+                        <td><pre class="code">
+              &lt!-- comment --&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">FONT SIZE</p>
 
-           </td>
-          <td><pre class="code">
-<span class="red">&ltstrong&gt word &lt/strong&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">ITALICIZED WORDS</p>
+                         </td>
+                        <td><pre class="code">
+              <span class="red">&ltp style=</span>"font-size: 12px"<span class="red">&gt</span>
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">FONT COLOR</p>
+                          <p> list of colors: <a href=http://www.w3.org/TR/css3-color/#svg-color>http://www.w3.org/TR/css3-color/#svg-color</a></p>
+                         </td>
+                        <td><pre class="code">
+              <span class="red">&lth2 style=</span>"color:red"<span class="red">&gt</span>
+              <span class="red">&lth2 style=</span>"color: green; font-size:12px"<span class="red">&gt</span>
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">FONT FAMILY</p>
+                          <p> list of fonts: <a href=http://www.w3.org/TR/CSS21/fonts.html#generic-font-families>http://www.w3.org/TR/CSS21/fonts.html#generic-font-families</a></p>
+                        </td>
+                        <td><pre class="code">
+              <span class="red">&lth1 style=</span>"font-family: Arial"<span class="red">&gt</span>Title<span class="red">"red"&lt/h1&gt</span>
+              <span class="red">&ltli style=</span>"font-family: Arial"<span class="red">&gt</span>Hello!<span class="red">&lt/li&gt</span>
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">BACKGROUND COLOR</p>
+                          <p>* The bullets or list numbers do not align with them</p>
+                        </td>
+                        <td><pre class="code">
+              <span class="red">&ltp style=</span>"background-color: red;"<span class="red">&gt</span>Hello!<span class="red">&lt/p&gt</span>
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">ALIGNING THE TEXT</p>
 
-           </td>
-          <td><pre class="code">
-<span class="red">&ltem&gt</span> <em>word</em> <span class="red">&lt/em&gt</span>
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">TABLES</p>
+                         </td>
+                        <td><pre class="code">
+              <span class="red">&lth1 style=</span>"text-align:center"<span class="red">&gt</span>
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">BOLD WORDS</p>
 
-           </td>
-          <td><pre class="code">
-&ltbody&gt
-    <span class="red">&lttable&gt
-    &lt/table&gt</span>
-&lt/body&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">TABLE ROWS</p>
-            <p>* Use the <span class="code">&lttr&gt</span> tag to create a table row</p>
-          </td>
-          <td><pre class="code">
-&lttable&gt
-       <span class="red">&lttr&gt&lt/tr&gt
-       &lttr&gt&lt/tr&gt</span>
-&lt/table&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">TABLE COLUMN (DATA)</p>
-            <p>* Goes between table tags</p>
-          </td>
-          <td><pre class="code">
-&lttr&gt
-       <span class="red">&lttd&gt</span> 1st Row, 1st Column <span class="red">&lt/td&gt</span>
-       <span class="red">&lttd&gt</span> 1st Row, 2nd Column <span class="red">&lt/td&gt</span>
-&lt/tr&gt
-&lttr&gt
-       <span class="red">&lttd&gt</span> 2nd Row, 1st Column <span class="red">&lt/td&gt</span>
-       <span class="red">&lttd&gt</span> 2nd Row, 2nd Column <span class="red">&lt/td&gt</span>
-&lt/tr&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">TABLE BORDER</p>
-            <p>* Goes between table tags</p>
-          </td>
-          <td><pre class="code">
-&lttable&gt
-    <span class="red">&lttable border=</span>"1px"<span class="red">&gt</span>
-       &lttr&gt
-          &lttd&gt One &lt/td&gt
-       &lt/tr&gt
-&lttable&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">TABLE HEADS</p>
-            <p>* Add  <span class="code">&ltthead&gt</span>tag above the <span class="code">&lttbody&gt</span></p>
-            <p>* Holds the heading for each column</p>
-          </td>
-          <td><pre class="code">
-&lttable&gt
-    &lttable border="1px"&gt
-      <span class="red">&ltthead&gt</span>
-         &lttr&gt
-           <span class="red">&ltth&gt</span>
-              Name
-            <span class="red">&lt/th&gt
-            &ltth&gt</span>
-               Favorite Color
-            <span class="red">&lt/th&gt</span>
-         &lt/tr&gt
-       <span class="red">&lt/thead&gt</span>
-      &lttbody&gt
-         &lttr&gt
-            &lttd&gt One &lt/td&gt
-         &lt/tr&gt
-      &lt/tbody&gt
-&lttable&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">NAMING THE TABLE</p>
-            <p> * use the colspan attribute for the <span class="code">&ltth&gt</span>tag</p>
-          </td>
-          <td><pre class="code">
-&lttable border="1px"&gt
-   <span class="red">&ltthead&gt</span>
-     &lttr&gt
-       <span class="red">&ltth colspan="3"&gt</span>3 columns across!<span class="red">&lt/th&gt</span>
-     &lt/tr&gt
-   <span class="red">&lt/thead&gt</span>
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">DIVISION</p>
-            <p>* Allows you to divide your page into containers, allowing to create visual HTML objects like sidebars, menus, and more.</p>
-          </td>
-          <td><pre class="code">
-&ltbody&gt
-      <span class="red">&ltdiv</span> style="width:50px; height:50px; background-color:red"<span class="red">&gt&lt/div&gt</span>
-&lt/body&gt
-          </pre></td>
-        </tr>
-        <tr>
-          <td> <p class="subject">LINK to DIVs</p>
+                         </td>
+                        <td><pre class="code">
+              <span class="red">&ltstrong&gt word &lt/strong&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">ITALICIZED WORDS</p>
 
-           </td>
-          <td><pre class="code">
-<span class="red">&lta href=</span>"http://www.codeacademy.com"<span class="red">&gt
-      &ltdiv style=</span>"width:50px; height:50px; background-color:yellow"<span class="red">&gt&lt/div&gt
-&lt/a&gt</span>
-          </pre></td>
-        </tr>
+                         </td>
+                        <td><pre class="code">
+              <span class="red">&ltem&gt</span> <em>word</em> <span class="red">&lt/em&gt</span>
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">TABLES</p>
+
+                         </td>
+                        <td><pre class="code">
+              &ltbody&gt
+                  <span class="red">&lttable&gt
+                  &lt/table&gt</span>
+              &lt/body&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">TABLE ROWS</p>
+                          <p>* Use the <span class="code">&lttr&gt</span> tag to create a table row</p>
+                        </td>
+                        <td><pre class="code">
+              &lttable&gt
+                     <span class="red">&lttr&gt&lt/tr&gt
+                     &lttr&gt&lt/tr&gt</span>
+              &lt/table&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">TABLE COLUMN (DATA)</p>
+                          <p>* Goes between table tags</p>
+                        </td>
+                        <td><pre class="code">
+              &lttr&gt
+                     <span class="red">&lttd&gt</span> 1st Row, 1st Column <span class="red">&lt/td&gt</span>
+                     <span class="red">&lttd&gt</span> 1st Row, 2nd Column <span class="red">&lt/td&gt</span>
+              &lt/tr&gt
+              &lttr&gt
+                     <span class="red">&lttd&gt</span> 2nd Row, 1st Column <span class="red">&lt/td&gt</span>
+                     <span class="red">&lttd&gt</span> 2nd Row, 2nd Column <span class="red">&lt/td&gt</span>
+              &lt/tr&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">TABLE BORDER</p>
+                          <p>* Goes between table tags</p>
+                        </td>
+                        <td><pre class="code">
+              &lttable&gt
+                  <span class="red">&lttable border=</span>"1px"<span class="red">&gt</span>
+                     &lttr&gt
+                        &lttd&gt One &lt/td&gt
+                     &lt/tr&gt
+              &lttable&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">TABLE HEADS</p>
+                          <p>* Add  <span class="code">&ltthead&gt</span>tag above the <span class="code">&lttbody&gt</span></p>
+                          <p>* Holds the heading for each column</p>
+                        </td>
+                        <td><pre class="code">
+              &lttable&gt
+                  &lttable border="1px"&gt
+                    <span class="red">&ltthead&gt</span>
+                       &lttr&gt
+                         <span class="red">&ltth&gt</span>
+                            Name
+                          <span class="red">&lt/th&gt
+                          &ltth&gt</span>
+                             Favorite Color
+                          <span class="red">&lt/th&gt</span>
+                       &lt/tr&gt
+                     <span class="red">&lt/thead&gt</span>
+                    &lttbody&gt
+                       &lttr&gt
+                          &lttd&gt One &lt/td&gt
+                       &lt/tr&gt
+                    &lt/tbody&gt
+              &lttable&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">NAMING THE TABLE</p>
+                          <p> * use the colspan attribute for the <span class="code">&ltth&gt</span>tag</p>
+                        </td>
+                        <td><pre class="code">
+              &lttable border="1px"&gt
+                 <span class="red">&ltthead&gt</span>
+                   &lttr&gt
+                     <span class="red">&ltth colspan="3"&gt</span>3 columns across!<span class="red">&lt/th&gt</span>
+                   &lt/tr&gt
+                 <span class="red">&lt/thead&gt</span>
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">DIVISION</p>
+                          <p>* Allows you to divide your page into containers, allowing to create visual HTML objects like sidebars, menus, and more.</p>
+                        </td>
+                        <td><pre class="code">
+              &ltbody&gt
+                    <span class="red">&ltdiv</span> style="width:50px; height:50px; background-color:red"<span class="red">&gt&lt/div&gt</span>
+              &lt/body&gt
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">LINK to DIVs</p>
+
+                         </td>
+                        <td><pre class="code">
+              <span class="red">&lta href=</span>"http://www.codeacademy.com"<span class="red">&gt
+                    &ltdiv style=</span>"width:50px; height:50px; background-color:yellow"<span class="red">&gt&lt/div&gt
+              &lt/a&gt</span>
+                        </pre></td>
+                      </tr>
+                      <tr>
+                        <td> <p class="subject">SPAN</p>
+                            <p>* allows you to control styling for smaller parts of your page, such as text. For example, if you always want the first word of your paragraphs to be red, you can wrap each first word in <span class="code">&ltspan&gt &lt/span&gt</span> tags and make them red using CSS</p>
+                        </td>
+                        <td><pre class="code"><span class="red">&ltspan&gt&lt/span&gt</span></pre></td>
+                      </tr>
+                    </pre></table>
+                  </div>
+            </div>
+        </div>
+
+        <div id="footer">
+      <table>
         <tr>
-          <td> <p class="subject">SPAN</p>
-              <p>* allows you to control styling for smaller parts of your page, such as text. For example, if you always want the first word of your paragraphs to be red, you can wrap each first word in <span class="code">&ltspan&gt &lt/span&gt</span> tags and make them red using CSS</p>
-          </td>
-          <td><pre class="code"><span class="red">&ltspan&gt&lt/span&gt</span></pre></td>
+          <td><a href="index.html">Home</a></td>
+          <td><a href="coming_soon.html">Projects</a></td>
+          <td><a href="cheatsheet.html">Blog</a></td>
+          <td><a href="coming_soon.html">About</a></td>
+          <td><a href="coming_soon.html">Contact</a></td>
+          <td><a href="coming_soon.html">Site map</a></td>
         </tr>
-      </pre></table>
-  </div>
+      </table>
+        </div>
+    </div>
   </body>
 </html>
